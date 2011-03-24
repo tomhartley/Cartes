@@ -40,6 +40,7 @@
 		E2CFF915133BC615001AF92E /* THCard.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFF914133BC615001AF92E /* THCard.m */; };
 		E2CFF916133BC615001AF92E /* THCard.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFF914133BC615001AF92E /* THCard.m */; };
 		E2CFF917133BC615001AF92E /* THCard.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFF914133BC615001AF92E /* THCard.m */; };
+		E2CFF91A133BE51A001AF92E /* THCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFF919133BE51A001AF92E /* THCardView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,8 @@
 		E2CFF8FE133BC10A001AF92E /* CartesDeckTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CartesDeckTests.m; sourceTree = "<group>"; };
 		E2CFF913133BC615001AF92E /* THCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THCard.h; path = Classes/Model/THCard.h; sourceTree = "<group>"; };
 		E2CFF914133BC615001AF92E /* THCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THCard.m; path = Classes/Model/THCard.m; sourceTree = "<group>"; };
+		E2CFF918133BE51A001AF92E /* THCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THCardView.h; path = Classes/View/THCardView.h; sourceTree = "<group>"; };
+		E2CFF919133BE51A001AF92E /* THCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THCardView.m; path = Classes/View/THCardView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,6 +297,8 @@
 		E2CFF90A133BC53D001AF92E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E2CFF918133BE51A001AF92E /* THCardView.h */,
+				E2CFF919133BE51A001AF92E /* THCardView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -545,6 +550,7 @@
 				E2CFF88A133BBE41001AF92E /* CartesAppDelegate.m in Sources */,
 				E2CFF890133BBE41001AF92E /* CartesViewController.m in Sources */,
 				E2CFF915133BC615001AF92E /* THCard.m in Sources */,
+				E2CFF91A133BE51A001AF92E /* THCardView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

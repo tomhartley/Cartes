@@ -28,6 +28,6 @@ typedef enum {
 
 @property (nonatomic,readonly) THCardSuit suit;
 @property (nonatomic,readonly) int rank;
-@property (nonatomic,readonly) BOOL faceUp;
+@property (nonatomic) BOOL faceUp;
 
 @end
