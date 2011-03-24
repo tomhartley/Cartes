@@ -13,9 +13,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E2CFF8B2133BBE4B001AF92E"
-               BuildableName = "Cartes copy.app"
-               BlueprintName = "Cartes client"
+               BlueprintIdentifier = "E2CFF8CF133BC10A001AF92E"
+               BuildableName = "CartesDeck.app"
+               BlueprintName = "CartesDeck"
                ReferencedContainer = "container:Cartes.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -27,6 +27,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E2CFF8EE133BC10A001AF92E"
+               BuildableName = "CartesDeckTests.octest"
+               BlueprintName = "CartesDeckTests"
+               ReferencedContainer = "container:Cartes.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -40,9 +50,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E2CFF8B2133BBE4B001AF92E"
-            BuildableName = "Cartes copy.app"
-            BlueprintName = "Cartes client"
+            BlueprintIdentifier = "E2CFF8CF133BC10A001AF92E"
+            BuildableName = "CartesDeck.app"
+            BlueprintName = "CartesDeck"
             ReferencedContainer = "container:Cartes.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -59,9 +69,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E2CFF8B2133BBE4B001AF92E"
-            BuildableName = "Cartes copy.app"
-            BlueprintName = "Cartes client"
+            BlueprintIdentifier = "E2CFF8CF133BC10A001AF92E"
+            BuildableName = "CartesDeck.app"
+            BlueprintName = "CartesDeck"
             ReferencedContainer = "container:Cartes.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
