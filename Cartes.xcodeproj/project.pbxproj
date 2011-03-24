@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E2CFF87A133BBE41001AF92E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CFF879133BBE41001AF92E /* UIKit.framework */; };
+		E2CFF87C133BBE41001AF92E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CFF87B133BBE41001AF92E /* Foundation.framework */; };
+		E2CFF87E133BBE41001AF92E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CFF87D133BBE41001AF92E /* CoreGraphics.framework */; };
+		E2CFF884133BBE41001AF92E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2CFF882133BBE41001AF92E /* InfoPlist.strings */; };
+		E2CFF887133BBE41001AF92E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFF886133BBE41001AF92E /* main.m */; };
+		E2CFF88A133BBE41001AF92E /* CartesAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFF889133BBE41001AF92E /* CartesAppDelegate.m */; };
+		E2CFF88D133BBE41001AF92E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2CFF88B133BBE41001AF92E /* MainWindow.xib */; };
+		E2CFF890133BBE41001AF92E /* CartesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFF88F133BBE41001AF92E /* CartesViewController.m */; };
+		E2CFF893133BBE41001AF92E /* CartesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2CFF891133BBE41001AF92E /* CartesViewController.xib */; };
+		E2CFF89A133BBE41001AF92E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CFF879133BBE41001AF92E /* UIKit.framework */; };
+		E2CFF89B133BBE41001AF92E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CFF87B133BBE41001AF92E /* Foundation.framework */; };
+		E2CFF89C133BBE41001AF92E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CFF87D133BBE41001AF92E /* CoreGraphics.framework */; };
+		E2CFF8A4133BBE41001AF92E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2CFF8A2133BBE41001AF92E /* InfoPlist.strings */; };
+		E2CFF8A7133BBE41001AF92E /* CartesTests.h in Resources */ = {isa = PBXBuildFile; fileRef = E2CFF8A6133BBE41001AF92E /* CartesTests.h */; };
+		E2CFF8A9133BBE41001AF92E /* CartesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFF8A8133BBE41001AF92E /* CartesTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E2CFF89D133BBE41001AF92E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2CFF86C133BBE41001AF92E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2CFF874133BBE41001AF92E;
+			remoteInfo = Cartes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E2CFF875133BBE41001AF92E /* Cartes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cartes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2CFF879133BBE41001AF92E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E2CFF87B133BBE41001AF92E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E2CFF87D133BBE41001AF92E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E2CFF881133BBE41001AF92E /* Cartes-Info.plist */ = {isa = PBXFileReference; path = "Cartes-Info.plist"; sourceTree = "<group>"; };
+		E2CFF883133BBE41001AF92E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E2CFF885133BBE41001AF92E /* Cartes-Prefix.pch */ = {isa = PBXFileReference; path = "Cartes-Prefix.pch"; sourceTree = "<group>"; };
+		E2CFF886133BBE41001AF92E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E2CFF888133BBE41001AF92E /* CartesAppDelegate.h */ = {isa = PBXFileReference; path = CartesAppDelegate.h; sourceTree = "<group>"; };
+		E2CFF889133BBE41001AF92E /* CartesAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CartesAppDelegate.m; sourceTree = "<group>"; };
+		E2CFF88C133BBE41001AF92E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		E2CFF88E133BBE41001AF92E /* CartesViewController.h */ = {isa = PBXFileReference; path = CartesViewController.h; sourceTree = "<group>"; };
+		E2CFF88F133BBE41001AF92E /* CartesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CartesViewController.m; sourceTree = "<group>"; };
+		E2CFF892133BBE41001AF92E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CartesViewController.xib; sourceTree = "<group>"; };
+		E2CFF899133BBE41001AF92E /* CartesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CartesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2CFF8A1133BBE41001AF92E /* CartesTests-Info.plist */ = {isa = PBXFileReference; path = "CartesTests-Info.plist"; sourceTree = "<group>"; };
+		E2CFF8A3133BBE41001AF92E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E2CFF8A5133BBE41001AF92E /* CartesTests-Prefix.pch */ = {isa = PBXFileReference; path = "CartesTests-Prefix.pch"; sourceTree = "<group>"; };
+		E2CFF8A6133BBE41001AF92E /* CartesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CartesTests.h; sourceTree = "<group>"; };
+		E2CFF8A8133BBE41001AF92E /* CartesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CartesTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2CFF872133BBE41001AF92E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2CFF87A133BBE41001AF92E /* UIKit.framework in Frameworks */,
+				E2CFF87C133BBE41001AF92E /* Foundation.framework in Frameworks */,
+				E2CFF87E133BBE41001AF92E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2CFF895133BBE41001AF92E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2CFF89A133BBE41001AF92E /* UIKit.framework in Frameworks */,
+				E2CFF89B133BBE41001AF92E /* Foundation.framework in Frameworks */,
+				E2CFF89C133BBE41001AF92E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E2CFF86A133BBE41001AF92E = {
+			isa = PBXGroup;
+			children = (
+				E2CFF87F133BBE41001AF92E /* Cartes */,
+				E2CFF89F133BBE41001AF92E /* CartesTests */,
+				E2CFF878133BBE41001AF92E /* Frameworks */,
+				E2CFF876133BBE41001AF92E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E2CFF876133BBE41001AF92E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2CFF875133BBE41001AF92E /* Cartes.app */,
+				E2CFF899133BBE41001AF92E /* CartesTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2CFF878133BBE41001AF92E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2CFF879133BBE41001AF92E /* UIKit.framework */,
+				E2CFF87B133BBE41001AF92E /* Foundation.framework */,
+				E2CFF87D133BBE41001AF92E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2CFF87F133BBE41001AF92E /* Cartes */ = {
+			isa = PBXGroup;
+			children = (
+				E2CFF888133BBE41001AF92E /* CartesAppDelegate.h */,
+				E2CFF889133BBE41001AF92E /* CartesAppDelegate.m */,
+				E2CFF88B133BBE41001AF92E /* MainWindow.xib */,
+				E2CFF88E133BBE41001AF92E /* CartesViewController.h */,
+				E2CFF88F133BBE41001AF92E /* CartesViewController.m */,
+				E2CFF891133BBE41001AF92E /* CartesViewController.xib */,
+				E2CFF880133BBE41001AF92E /* Supporting Files */,
+			);
+			path = Cartes;
+			sourceTree = "<group>";
+		};
+		E2CFF880133BBE41001AF92E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2CFF881133BBE41001AF92E /* Cartes-Info.plist */,
+				E2CFF882133BBE41001AF92E /* InfoPlist.strings */,
+				E2CFF885133BBE41001AF92E /* Cartes-Prefix.pch */,
+				E2CFF886133BBE41001AF92E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2CFF89F133BBE41001AF92E /* CartesTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2CFF8A6133BBE41001AF92E /* CartesTests.h */,
+				E2CFF8A8133BBE41001AF92E /* CartesTests.m */,
+				E2CFF8A0133BBE41001AF92E /* Supporting Files */,
+			);
+			path = CartesTests;
+			sourceTree = "<group>";
+		};
+		E2CFF8A0133BBE41001AF92E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2CFF8A1133BBE41001AF92E /* CartesTests-Info.plist */,
+				E2CFF8A2133BBE41001AF92E /* InfoPlist.strings */,
+				E2CFF8A5133BBE41001AF92E /* CartesTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2CFF874133BBE41001AF92E /* Cartes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2CFF8AC133BBE41001AF92E /* Build configuration list for PBXNativeTarget "Cartes" */;
+			buildPhases = (
+				E2CFF871133BBE41001AF92E /* Sources */,
+				E2CFF872133BBE41001AF92E /* Frameworks */,
+				E2CFF873133BBE41001AF92E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cartes;
+			productName = Cartes;
+			productReference = E2CFF875133BBE41001AF92E /* Cartes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E2CFF898133BBE41001AF92E /* CartesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2CFF8AF133BBE41001AF92E /* Build configuration list for PBXNativeTarget "CartesTests" */;
+			buildPhases = (
+				E2CFF894133BBE41001AF92E /* Sources */,
+				E2CFF895133BBE41001AF92E /* Frameworks */,
+				E2CFF896133BBE41001AF92E /* Resources */,
+				E2CFF897133BBE41001AF92E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2CFF89E133BBE41001AF92E /* PBXTargetDependency */,
+			);
+			name = CartesTests;
+			productName = CartesTests;
+			productReference = E2CFF899133BBE41001AF92E /* CartesTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2CFF86C133BBE41001AF92E /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = E2CFF86F133BBE41001AF92E /* Build configuration list for PBXProject "Cartes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E2CFF86A133BBE41001AF92E;
+			productRefGroup = E2CFF876133BBE41001AF92E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2CFF874133BBE41001AF92E /* Cartes */,
+				E2CFF898133BBE41001AF92E /* CartesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2CFF873133BBE41001AF92E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2CFF884133BBE41001AF92E /* InfoPlist.strings in Resources */,
+				E2CFF88D133BBE41001AF92E /* MainWindow.xib in Resources */,
+				E2CFF893133BBE41001AF92E /* CartesViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2CFF896133BBE41001AF92E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2CFF8A4133BBE41001AF92E /* InfoPlist.strings in Resources */,
+				E2CFF8A7133BBE41001AF92E /* CartesTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E2CFF897133BBE41001AF92E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2CFF871133BBE41001AF92E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2CFF887133BBE41001AF92E /* main.m in Sources */,
+				E2CFF88A133BBE41001AF92E /* CartesAppDelegate.m in Sources */,
+				E2CFF890133BBE41001AF92E /* CartesViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2CFF894133BBE41001AF92E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2CFF8A9133BBE41001AF92E /* CartesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2CFF89E133BBE41001AF92E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2CFF874133BBE41001AF92E /* Cartes */;
+			targetProxy = E2CFF89D133BBE41001AF92E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E2CFF882133BBE41001AF92E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2CFF883133BBE41001AF92E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E2CFF88B133BBE41001AF92E /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2CFF88C133BBE41001AF92E /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		E2CFF891133BBE41001AF92E /* CartesViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2CFF892133BBE41001AF92E /* en */,
+			);
+			name = CartesViewController.xib;
+			sourceTree = "<group>";
+		};
+		E2CFF8A2133BBE41001AF92E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2CFF8A3133BBE41001AF92E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E2CFF8AA133BBE41001AF92E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		E2CFF8AB133BBE41001AF92E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		E2CFF8AD133BBE41001AF92E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Cartes/Cartes-Prefix.pch";
+				INFOPLIST_FILE = "Cartes/Cartes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E2CFF8AE133BBE41001AF92E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Cartes/Cartes-Prefix.pch";
+				INFOPLIST_FILE = "Cartes/Cartes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E2CFF8B0133BBE41001AF92E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Cartes.app/Cartes";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CartesTests/CartesTests-Prefix.pch";
+				INFOPLIST_FILE = "CartesTests/CartesTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E2CFF8B1133BBE41001AF92E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Cartes.app/Cartes";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CartesTests/CartesTests-Prefix.pch";
+				INFOPLIST_FILE = "CartesTests/CartesTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2CFF86F133BBE41001AF92E /* Build configuration list for PBXProject "Cartes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2CFF8AA133BBE41001AF92E /* Debug */,
+				E2CFF8AB133BBE41001AF92E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2CFF8AC133BBE41001AF92E /* Build configuration list for PBXNativeTarget "Cartes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2CFF8AD133BBE41001AF92E /* Debug */,
+				E2CFF8AE133BBE41001AF92E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E2CFF8AF133BBE41001AF92E /* Build configuration list for PBXNativeTarget "CartesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2CFF8B0133BBE41001AF92E /* Debug */,
+				E2CFF8B1133BBE41001AF92E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2CFF86C133BBE41001AF92E /* Project object */;
+}
