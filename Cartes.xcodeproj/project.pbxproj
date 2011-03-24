@@ -22,6 +22,24 @@
 		E2CFF8A4133BBE41001AF92E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2CFF8A2133BBE41001AF92E /* InfoPlist.strings */; };
 		E2CFF8A7133BBE41001AF92E /* CartesTests.h in Resources */ = {isa = PBXBuildFile; fileRef = E2CFF8A6133BBE41001AF92E /* CartesTests.h */; };
 		E2CFF8A9133BBE41001AF92E /* CartesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFF8A8133BBE41001AF92E /* CartesTests.m */; };
+		E2CFF8D2133BC10A001AF92E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CFF879133BBE41001AF92E /* UIKit.framework */; };
+		E2CFF8D3133BC10A001AF92E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CFF87B133BBE41001AF92E /* Foundation.framework */; };
+		E2CFF8D4133BC10A001AF92E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CFF87D133BBE41001AF92E /* CoreGraphics.framework */; };
+		E2CFF8DA133BC10A001AF92E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2CFF8D8133BC10A001AF92E /* InfoPlist.strings */; };
+		E2CFF8DD133BC10A001AF92E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFF8DC133BC10A001AF92E /* main.m */; };
+		E2CFF8E0133BC10A001AF92E /* CartesDeckAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFF8DF133BC10A001AF92E /* CartesDeckAppDelegate.m */; };
+		E2CFF8E3133BC10A001AF92E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2CFF8E1133BC10A001AF92E /* MainWindow.xib */; };
+		E2CFF8E6133BC10A001AF92E /* CartesDeckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFF8E5133BC10A001AF92E /* CartesDeckViewController.m */; };
+		E2CFF8E9133BC10A001AF92E /* CartesDeckViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2CFF8E7133BC10A001AF92E /* CartesDeckViewController.xib */; };
+		E2CFF8F0133BC10A001AF92E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CFF879133BBE41001AF92E /* UIKit.framework */; };
+		E2CFF8F1133BC10A001AF92E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CFF87B133BBE41001AF92E /* Foundation.framework */; };
+		E2CFF8F2133BC10A001AF92E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CFF87D133BBE41001AF92E /* CoreGraphics.framework */; };
+		E2CFF8FA133BC10A001AF92E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2CFF8F8133BC10A001AF92E /* InfoPlist.strings */; };
+		E2CFF8FD133BC10A001AF92E /* CartesDeckTests.h in Resources */ = {isa = PBXBuildFile; fileRef = E2CFF8FC133BC10A001AF92E /* CartesDeckTests.h */; };
+		E2CFF8FF133BC10A001AF92E /* CartesDeckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFF8FE133BC10A001AF92E /* CartesDeckTests.m */; };
+		E2CFF915133BC615001AF92E /* THCard.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFF914133BC615001AF92E /* THCard.m */; };
+		E2CFF916133BC615001AF92E /* THCard.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFF914133BC615001AF92E /* THCard.m */; };
+		E2CFF917133BC615001AF92E /* THCard.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFF914133BC615001AF92E /* THCard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +50,13 @@
 			remoteGlobalIDString = E2CFF874133BBE41001AF92E;
 			remoteInfo = Cartes;
 		};
+		E2CFF8F3133BC10A001AF92E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2CFF86C133BBE41001AF92E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2CFF8CF133BC10A001AF92E;
+			remoteInfo = CartesDeck;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -39,22 +64,41 @@
 		E2CFF879133BBE41001AF92E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E2CFF87B133BBE41001AF92E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E2CFF87D133BBE41001AF92E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		E2CFF881133BBE41001AF92E /* Cartes-Info.plist */ = {isa = PBXFileReference; path = "Cartes-Info.plist"; sourceTree = "<group>"; };
+		E2CFF881133BBE41001AF92E /* Cartes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Cartes-Info.plist"; sourceTree = "<group>"; };
 		E2CFF883133BBE41001AF92E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E2CFF885133BBE41001AF92E /* Cartes-Prefix.pch */ = {isa = PBXFileReference; path = "Cartes-Prefix.pch"; sourceTree = "<group>"; };
+		E2CFF885133BBE41001AF92E /* Cartes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cartes-Prefix.pch"; sourceTree = "<group>"; };
 		E2CFF886133BBE41001AF92E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E2CFF888133BBE41001AF92E /* CartesAppDelegate.h */ = {isa = PBXFileReference; path = CartesAppDelegate.h; sourceTree = "<group>"; };
-		E2CFF889133BBE41001AF92E /* CartesAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CartesAppDelegate.m; sourceTree = "<group>"; };
+		E2CFF888133BBE41001AF92E /* CartesAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CartesAppDelegate.h; path = Classes/Model/CartesAppDelegate.h; sourceTree = "<group>"; };
+		E2CFF889133BBE41001AF92E /* CartesAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CartesAppDelegate.m; path = Classes/Model/CartesAppDelegate.m; sourceTree = "<group>"; };
 		E2CFF88C133BBE41001AF92E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		E2CFF88E133BBE41001AF92E /* CartesViewController.h */ = {isa = PBXFileReference; path = CartesViewController.h; sourceTree = "<group>"; };
-		E2CFF88F133BBE41001AF92E /* CartesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CartesViewController.m; sourceTree = "<group>"; };
+		E2CFF88E133BBE41001AF92E /* CartesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CartesViewController.h; path = Classes/Controller/CartesViewController.h; sourceTree = "<group>"; };
+		E2CFF88F133BBE41001AF92E /* CartesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CartesViewController.m; path = Classes/Controller/CartesViewController.m; sourceTree = "<group>"; };
 		E2CFF892133BBE41001AF92E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CartesViewController.xib; sourceTree = "<group>"; };
 		E2CFF899133BBE41001AF92E /* CartesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CartesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2CFF8A1133BBE41001AF92E /* CartesTests-Info.plist */ = {isa = PBXFileReference; path = "CartesTests-Info.plist"; sourceTree = "<group>"; };
+		E2CFF8A1133BBE41001AF92E /* CartesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CartesTests-Info.plist"; sourceTree = "<group>"; };
 		E2CFF8A3133BBE41001AF92E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E2CFF8A5133BBE41001AF92E /* CartesTests-Prefix.pch */ = {isa = PBXFileReference; path = "CartesTests-Prefix.pch"; sourceTree = "<group>"; };
+		E2CFF8A5133BBE41001AF92E /* CartesTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CartesTests-Prefix.pch"; sourceTree = "<group>"; };
 		E2CFF8A6133BBE41001AF92E /* CartesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CartesTests.h; sourceTree = "<group>"; };
 		E2CFF8A8133BBE41001AF92E /* CartesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CartesTests.m; sourceTree = "<group>"; };
+		E2CFF8D0133BC10A001AF92E /* CartesDeck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CartesDeck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2CFF8D7133BC10A001AF92E /* CartesDeck-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CartesDeck-Info.plist"; sourceTree = "<group>"; };
+		E2CFF8D9133BC10A001AF92E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E2CFF8DB133BC10A001AF92E /* CartesDeck-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CartesDeck-Prefix.pch"; sourceTree = "<group>"; };
+		E2CFF8DC133BC10A001AF92E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E2CFF8DE133BC10A001AF92E /* CartesDeckAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CartesDeckAppDelegate.h; path = Classes/Model/CartesDeckAppDelegate.h; sourceTree = "<group>"; };
+		E2CFF8DF133BC10A001AF92E /* CartesDeckAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CartesDeckAppDelegate.m; path = Classes/Model/CartesDeckAppDelegate.m; sourceTree = "<group>"; };
+		E2CFF8E2133BC10A001AF92E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		E2CFF8E4133BC10A001AF92E /* CartesDeckViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CartesDeckViewController.h; path = Classes/Controller/CartesDeckViewController.h; sourceTree = "<group>"; };
+		E2CFF8E5133BC10A001AF92E /* CartesDeckViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CartesDeckViewController.m; path = Classes/Controller/CartesDeckViewController.m; sourceTree = "<group>"; };
+		E2CFF8E8133BC10A001AF92E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CartesDeckViewController.xib; sourceTree = "<group>"; };
+		E2CFF8EF133BC10A001AF92E /* CartesDeckTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CartesDeckTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2CFF8F7133BC10A001AF92E /* CartesDeckTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CartesDeckTests-Info.plist"; sourceTree = "<group>"; };
+		E2CFF8F9133BC10A001AF92E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E2CFF8FB133BC10A001AF92E /* CartesDeckTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CartesDeckTests-Prefix.pch"; sourceTree = "<group>"; };
+		E2CFF8FC133BC10A001AF92E /* CartesDeckTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CartesDeckTests.h; sourceTree = "<group>"; };
+		E2CFF8FE133BC10A001AF92E /* CartesDeckTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CartesDeckTests.m; sourceTree = "<group>"; };
+		E2CFF913133BC615001AF92E /* THCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THCard.h; path = Classes/Model/THCard.h; sourceTree = "<group>"; };
+		E2CFF914133BC615001AF92E /* THCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THCard.m; path = Classes/Model/THCard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +122,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E2CFF8CD133BC10A001AF92E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2CFF8D2133BC10A001AF92E /* UIKit.framework in Frameworks */,
+				E2CFF8D3133BC10A001AF92E /* Foundation.framework in Frameworks */,
+				E2CFF8D4133BC10A001AF92E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2CFF8EB133BC10A001AF92E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2CFF8F0133BC10A001AF92E /* UIKit.framework in Frameworks */,
+				E2CFF8F1133BC10A001AF92E /* Foundation.framework in Frameworks */,
+				E2CFF8F2133BC10A001AF92E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -86,6 +150,8 @@
 			children = (
 				E2CFF87F133BBE41001AF92E /* Cartes */,
 				E2CFF89F133BBE41001AF92E /* CartesTests */,
+				E2CFF8D5133BC10A001AF92E /* CartesDeck */,
+				E2CFF8F5133BC10A001AF92E /* CartesDeckTests */,
 				E2CFF878133BBE41001AF92E /* Frameworks */,
 				E2CFF876133BBE41001AF92E /* Products */,
 			);
@@ -96,6 +162,8 @@
 			children = (
 				E2CFF875133BBE41001AF92E /* Cartes.app */,
 				E2CFF899133BBE41001AF92E /* CartesTests.octest */,
+				E2CFF8D0133BC10A001AF92E /* CartesDeck.app */,
+				E2CFF8EF133BC10A001AF92E /* CartesDeckTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,12 +181,9 @@
 		E2CFF87F133BBE41001AF92E /* Cartes */ = {
 			isa = PBXGroup;
 			children = (
-				E2CFF888133BBE41001AF92E /* CartesAppDelegate.h */,
-				E2CFF889133BBE41001AF92E /* CartesAppDelegate.m */,
-				E2CFF88B133BBE41001AF92E /* MainWindow.xib */,
-				E2CFF88E133BBE41001AF92E /* CartesViewController.h */,
-				E2CFF88F133BBE41001AF92E /* CartesViewController.m */,
-				E2CFF891133BBE41001AF92E /* CartesViewController.xib */,
+				E2CFF911133BC5E4001AF92E /* Resources */,
+				E2CFF907133BC536001AF92E /* Classes */,
+				E2CFF90B133BC57D001AF92E /* Nibs */,
 				E2CFF880133BBE41001AF92E /* Supporting Files */,
 			);
 			path = Cartes;
@@ -153,6 +218,152 @@
 				E2CFF8A5133BBE41001AF92E /* CartesTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2CFF8D5133BC10A001AF92E /* CartesDeck */ = {
+			isa = PBXGroup;
+			children = (
+				E2CFF90D133BC598001AF92E /* Classes */,
+				E2CFF90C133BC596001AF92E /* Nibs */,
+				E2CFF8D6133BC10A001AF92E /* Supporting Files */,
+			);
+			path = CartesDeck;
+			sourceTree = "<group>";
+		};
+		E2CFF8D6133BC10A001AF92E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2CFF8D7133BC10A001AF92E /* CartesDeck-Info.plist */,
+				E2CFF8D8133BC10A001AF92E /* InfoPlist.strings */,
+				E2CFF8DB133BC10A001AF92E /* CartesDeck-Prefix.pch */,
+				E2CFF8DC133BC10A001AF92E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2CFF8F5133BC10A001AF92E /* CartesDeckTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2CFF8FC133BC10A001AF92E /* CartesDeckTests.h */,
+				E2CFF8FE133BC10A001AF92E /* CartesDeckTests.m */,
+				E2CFF8F6133BC10A001AF92E /* Supporting Files */,
+			);
+			path = CartesDeckTests;
+			sourceTree = "<group>";
+		};
+		E2CFF8F6133BC10A001AF92E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2CFF8F7133BC10A001AF92E /* CartesDeckTests-Info.plist */,
+				E2CFF8F8133BC10A001AF92E /* InfoPlist.strings */,
+				E2CFF8FB133BC10A001AF92E /* CartesDeckTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2CFF907133BC536001AF92E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E2CFF908133BC538001AF92E /* Model */,
+				E2CFF90A133BC53D001AF92E /* View */,
+				E2CFF909133BC53C001AF92E /* Controller */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		E2CFF908133BC538001AF92E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2CFF888133BBE41001AF92E /* CartesAppDelegate.h */,
+				E2CFF889133BBE41001AF92E /* CartesAppDelegate.m */,
+				E2CFF913133BC615001AF92E /* THCard.h */,
+				E2CFF914133BC615001AF92E /* THCard.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E2CFF909133BC53C001AF92E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E2CFF88E133BBE41001AF92E /* CartesViewController.h */,
+				E2CFF88F133BBE41001AF92E /* CartesViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E2CFF90A133BC53D001AF92E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E2CFF90B133BC57D001AF92E /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				E2CFF88B133BBE41001AF92E /* MainWindow.xib */,
+				E2CFF891133BBE41001AF92E /* CartesViewController.xib */,
+			);
+			name = Nibs;
+			sourceTree = "<group>";
+		};
+		E2CFF90C133BC596001AF92E /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				E2CFF8E1133BC10A001AF92E /* MainWindow.xib */,
+				E2CFF8E7133BC10A001AF92E /* CartesDeckViewController.xib */,
+			);
+			name = Nibs;
+			sourceTree = "<group>";
+		};
+		E2CFF90D133BC598001AF92E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E2CFF910133BC59C001AF92E /* Model */,
+				E2CFF90F133BC59B001AF92E /* View */,
+				E2CFF90E133BC599001AF92E /* Controller */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		E2CFF90E133BC599001AF92E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E2CFF8E4133BC10A001AF92E /* CartesDeckViewController.h */,
+				E2CFF8E5133BC10A001AF92E /* CartesDeckViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E2CFF90F133BC59B001AF92E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E2CFF910133BC59C001AF92E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2CFF8DE133BC10A001AF92E /* CartesDeckAppDelegate.h */,
+				E2CFF8DF133BC10A001AF92E /* CartesDeckAppDelegate.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E2CFF911133BC5E4001AF92E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E2CFF912133BC5EB001AF92E /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E2CFF912133BC5EB001AF92E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +405,42 @@
 			productReference = E2CFF899133BBE41001AF92E /* CartesTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
+		E2CFF8CF133BC10A001AF92E /* CartesDeck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2CFF904133BC10A001AF92E /* Build configuration list for PBXNativeTarget "CartesDeck" */;
+			buildPhases = (
+				E2CFF8CC133BC10A001AF92E /* Sources */,
+				E2CFF8CD133BC10A001AF92E /* Frameworks */,
+				E2CFF8CE133BC10A001AF92E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CartesDeck;
+			productName = CartesDeck;
+			productReference = E2CFF8D0133BC10A001AF92E /* CartesDeck.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E2CFF8EE133BC10A001AF92E /* CartesDeckTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2CFF905133BC10A001AF92E /* Build configuration list for PBXNativeTarget "CartesDeckTests" */;
+			buildPhases = (
+				E2CFF8EA133BC10A001AF92E /* Sources */,
+				E2CFF8EB133BC10A001AF92E /* Frameworks */,
+				E2CFF8EC133BC10A001AF92E /* Resources */,
+				E2CFF8ED133BC10A001AF92E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2CFF8F4133BC10A001AF92E /* PBXTargetDependency */,
+			);
+			name = CartesDeckTests;
+			productName = CartesDeckTests;
+			productReference = E2CFF8EF133BC10A001AF92E /* CartesDeckTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -213,6 +460,8 @@
 			targets = (
 				E2CFF874133BBE41001AF92E /* Cartes */,
 				E2CFF898133BBE41001AF92E /* CartesTests */,
+				E2CFF8CF133BC10A001AF92E /* CartesDeck */,
+				E2CFF8EE133BC10A001AF92E /* CartesDeckTests */,
 			);
 		};
 /* End PBXProject section */
@@ -237,10 +486,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E2CFF8CE133BC10A001AF92E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2CFF8DA133BC10A001AF92E /* InfoPlist.strings in Resources */,
+				E2CFF8E3133BC10A001AF92E /* MainWindow.xib in Resources */,
+				E2CFF8E9133BC10A001AF92E /* CartesDeckViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2CFF8EC133BC10A001AF92E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2CFF8FA133BC10A001AF92E /* InfoPlist.strings in Resources */,
+				E2CFF8FD133BC10A001AF92E /* CartesDeckTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		E2CFF897133BBE41001AF92E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		E2CFF8ED133BC10A001AF92E /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -263,6 +544,7 @@
 				E2CFF887133BBE41001AF92E /* main.m in Sources */,
 				E2CFF88A133BBE41001AF92E /* CartesAppDelegate.m in Sources */,
 				E2CFF890133BBE41001AF92E /* CartesViewController.m in Sources */,
+				E2CFF915133BC615001AF92E /* THCard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +553,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2CFF8A9133BBE41001AF92E /* CartesTests.m in Sources */,
+				E2CFF916133BC615001AF92E /* THCard.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2CFF8CC133BC10A001AF92E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2CFF8DD133BC10A001AF92E /* main.m in Sources */,
+				E2CFF8E0133BC10A001AF92E /* CartesDeckAppDelegate.m in Sources */,
+				E2CFF8E6133BC10A001AF92E /* CartesDeckViewController.m in Sources */,
+				E2CFF917133BC615001AF92E /* THCard.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2CFF8EA133BC10A001AF92E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2CFF8FF133BC10A001AF92E /* CartesDeckTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +583,11 @@
 			isa = PBXTargetDependency;
 			target = E2CFF874133BBE41001AF92E /* Cartes */;
 			targetProxy = E2CFF89D133BBE41001AF92E /* PBXContainerItemProxy */;
+		};
+		E2CFF8F4133BC10A001AF92E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2CFF8CF133BC10A001AF92E /* CartesDeck */;
+			targetProxy = E2CFF8F3133BC10A001AF92E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -313,6 +620,38 @@
 			isa = PBXVariantGroup;
 			children = (
 				E2CFF8A3133BBE41001AF92E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E2CFF8D8133BC10A001AF92E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2CFF8D9133BC10A001AF92E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E2CFF8E1133BC10A001AF92E /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2CFF8E2133BC10A001AF92E /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		E2CFF8E7133BC10A001AF92E /* CartesDeckViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2CFF8E8133BC10A001AF92E /* en */,
+			);
+			name = CartesDeckViewController.xib;
+			sourceTree = "<group>";
+		};
+		E2CFF8F8133BC10A001AF92E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2CFF8F9133BC10A001AF92E /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -428,6 +767,86 @@
 			};
 			name = Release;
 		};
+		E2CFF900133BC10A001AF92E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CartesDeck/CartesDeck-Prefix.pch";
+				INFOPLIST_FILE = "CartesDeck/CartesDeck-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E2CFF901133BC10A001AF92E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CartesDeck/CartesDeck-Prefix.pch";
+				INFOPLIST_FILE = "CartesDeck/CartesDeck-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E2CFF902133BC10A001AF92E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CartesDeck.app/CartesDeck";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CartesDeckTests/CartesDeckTests-Prefix.pch";
+				INFOPLIST_FILE = "CartesDeckTests/CartesDeckTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E2CFF903133BC10A001AF92E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CartesDeck.app/CartesDeck";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CartesDeckTests/CartesDeckTests-Prefix.pch";
+				INFOPLIST_FILE = "CartesDeckTests/CartesDeckTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -447,12 +866,30 @@
 				E2CFF8AE133BBE41001AF92E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2CFF8AF133BBE41001AF92E /* Build configuration list for PBXNativeTarget "CartesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E2CFF8B0133BBE41001AF92E /* Debug */,
 				E2CFF8B1133BBE41001AF92E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2CFF904133BC10A001AF92E /* Build configuration list for PBXNativeTarget "CartesDeck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2CFF900133BC10A001AF92E /* Debug */,
+				E2CFF901133BC10A001AF92E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E2CFF905133BC10A001AF92E /* Build configuration list for PBXNativeTarget "CartesDeckTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2CFF902133BC10A001AF92E /* Debug */,
+				E2CFF903133BC10A001AF92E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
