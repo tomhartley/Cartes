@@ -7,7 +7,7 @@
 //
 
 #import "CartesViewController.h"
-
+#import "THCardView.h"
 @implementation CartesViewController
 
 - (void)dealloc
@@ -25,13 +25,15 @@
 
 #pragma mark - View lifecycle
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	THCardView *cardView = [[THCardView alloc]initWithFrame:CGRectMake(50, 50, 100, 140)];
+	[self.view addSubview:cardView];
 }
-*/
+
 
 - (void)viewDidUnload
 {

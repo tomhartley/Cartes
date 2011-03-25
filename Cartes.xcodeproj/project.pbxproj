@@ -41,6 +41,8 @@
 		E2CFF916133BC615001AF92E /* THCard.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFF914133BC615001AF92E /* THCard.m */; };
 		E2CFF917133BC615001AF92E /* THCard.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFF914133BC615001AF92E /* THCard.m */; };
 		E2CFF91A133BE51A001AF92E /* THCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFF919133BE51A001AF92E /* THCardView.m */; };
+		E2CFF91C133BEE9D001AF92E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CFF91B133BEE9D001AF92E /* QuartzCore.framework */; };
+		E2CFF91E133BEEDB001AF92E /* cardbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = E2CFF91D133BEEDB001AF92E /* cardbackground.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +104,8 @@
 		E2CFF914133BC615001AF92E /* THCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THCard.m; path = Classes/Model/THCard.m; sourceTree = "<group>"; };
 		E2CFF918133BE51A001AF92E /* THCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THCardView.h; path = Classes/View/THCardView.h; sourceTree = "<group>"; };
 		E2CFF919133BE51A001AF92E /* THCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THCardView.m; path = Classes/View/THCardView.m; sourceTree = "<group>"; };
+		E2CFF91B133BEE9D001AF92E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E2CFF91D133BEEDB001AF92E /* cardbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardbackground.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2CFF91C133BEE9D001AF92E /* QuartzCore.framework in Frameworks */,
 				E2CFF87A133BBE41001AF92E /* UIKit.framework in Frameworks */,
 				E2CFF87C133BBE41001AF92E /* Foundation.framework in Frameworks */,
 				E2CFF87E133BBE41001AF92E /* CoreGraphics.framework in Frameworks */,
@@ -174,6 +179,7 @@
 		E2CFF878133BBE41001AF92E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E2CFF91B133BEE9D001AF92E /* QuartzCore.framework */,
 				E2CFF879133BBE41001AF92E /* UIKit.framework */,
 				E2CFF87B133BBE41001AF92E /* Foundation.framework */,
 				E2CFF87D133BBE41001AF92E /* CoreGraphics.framework */,
@@ -195,6 +201,7 @@
 		E2CFF880133BBE41001AF92E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E2CFF91D133BEEDB001AF92E /* cardbackground.png */,
 				E2CFF881133BBE41001AF92E /* Cartes-Info.plist */,
 				E2CFF882133BBE41001AF92E /* InfoPlist.strings */,
 				E2CFF885133BBE41001AF92E /* Cartes-Prefix.pch */,
@@ -479,6 +486,7 @@
 				E2CFF884133BBE41001AF92E /* InfoPlist.strings in Resources */,
 				E2CFF88D133BBE41001AF92E /* MainWindow.xib in Resources */,
 				E2CFF893133BBE41001AF92E /* CartesViewController.xib in Resources */,
+				E2CFF91E133BEEDB001AF92E /* cardbackground.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

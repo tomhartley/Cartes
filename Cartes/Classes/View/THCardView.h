@@ -7,10 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "THCard.h"
 
 @interface THCardView : UIView {
-    
+    THCard *card;
+	UILabel *topLeftLabel;
+	UILabel *bottomRightLabel;
 }
+
+@property (nonatomic, retain) THCard *card;
+
+-(void)update;
 
 @end

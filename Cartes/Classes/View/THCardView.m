@@ -7,16 +7,21 @@
 //
 
 #import "THCardView.h"
-
+#import <QuartzCore/QuartzCore.h>
 
 @implementation THCardView
+@synthesize card;
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-    }
+		self.layer.cornerRadius = 10;
+		self.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1];
+		self.layer.borderColor = [[UIColor colorWithWhite:0.3 alpha:1] CGColor];
+		self.layer.borderWidth = 3;
+	}
     return self;
 }
 
