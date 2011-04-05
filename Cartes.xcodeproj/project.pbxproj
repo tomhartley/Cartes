@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2CCAD3E134A7C7900304B7D /* CardTableBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = E2CCAD3D134A7C7900304B7D /* CardTableBackground.png */; };
+		E2CCAD41134A90F700304B7D /* CardBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = E2CCAD40134A90F700304B7D /* CardBackground.png */; };
 		E2CFF87A133BBE41001AF92E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CFF879133BBE41001AF92E /* UIKit.framework */; };
 		E2CFF87C133BBE41001AF92E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CFF87B133BBE41001AF92E /* Foundation.framework */; };
 		E2CFF87E133BBE41001AF92E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CFF87D133BBE41001AF92E /* CoreGraphics.framework */; };
@@ -42,7 +44,6 @@
 		E2CFF917133BC615001AF92E /* THCard.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFF914133BC615001AF92E /* THCard.m */; };
 		E2CFF91A133BE51A001AF92E /* THCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFF919133BE51A001AF92E /* THCardView.m */; };
 		E2CFF91C133BEE9D001AF92E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CFF91B133BEE9D001AF92E /* QuartzCore.framework */; };
-		E2CFF91E133BEEDB001AF92E /* cardbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = E2CFF91D133BEEDB001AF92E /* cardbackground.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E2CCAD3D134A7C7900304B7D /* CardTableBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CardTableBackground.png; path = Images/CardTableBackground.png; sourceTree = "<group>"; };
+		E2CCAD40134A90F700304B7D /* CardBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CardBackground.png; path = Images/CardBackground.png; sourceTree = "<group>"; };
 		E2CFF875133BBE41001AF92E /* Cartes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cartes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2CFF879133BBE41001AF92E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E2CFF87B133BBE41001AF92E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -105,7 +108,6 @@
 		E2CFF918133BE51A001AF92E /* THCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THCardView.h; path = Classes/View/THCardView.h; sourceTree = "<group>"; };
 		E2CFF919133BE51A001AF92E /* THCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THCardView.m; path = Classes/View/THCardView.m; sourceTree = "<group>"; };
 		E2CFF91B133BEE9D001AF92E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		E2CFF91D133BEEDB001AF92E /* cardbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardbackground.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,7 +203,6 @@
 		E2CFF880133BBE41001AF92E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E2CFF91D133BEEDB001AF92E /* cardbackground.png */,
 				E2CFF881133BBE41001AF92E /* Cartes-Info.plist */,
 				E2CFF882133BBE41001AF92E /* InfoPlist.strings */,
 				E2CFF885133BBE41001AF92E /* Cartes-Prefix.pch */,
@@ -374,6 +375,8 @@
 		E2CFF912133BC5EB001AF92E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E2CCAD3D134A7C7900304B7D /* CardTableBackground.png */,
+				E2CCAD40134A90F700304B7D /* CardBackground.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -486,7 +489,8 @@
 				E2CFF884133BBE41001AF92E /* InfoPlist.strings in Resources */,
 				E2CFF88D133BBE41001AF92E /* MainWindow.xib in Resources */,
 				E2CFF893133BBE41001AF92E /* CartesViewController.xib in Resources */,
-				E2CFF91E133BEEDB001AF92E /* cardbackground.png in Resources */,
+				E2CCAD3E134A7C7900304B7D /* CardTableBackground.png in Resources */,
+				E2CCAD41134A90F700304B7D /* CardBackground.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -711,12 +715,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jehangir Ghandhi (YBPJJEXZ2Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jehangir Ghandhi (YBPJJEXZ2Q)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cartes/Cartes-Prefix.pch";
 				INFOPLIST_FILE = "Cartes/Cartes-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "D95F39FC-843F-457A-AEBD-F845DC13B226";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D95F39FC-843F-457A-AEBD-F845DC13B226";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -725,11 +733,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jehangir Ghandhi (YBPJJEXZ2Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jehangir Ghandhi (YBPJJEXZ2Q)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cartes/Cartes-Prefix.pch";
 				INFOPLIST_FILE = "Cartes/Cartes-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "D95F39FC-843F-457A-AEBD-F845DC13B226";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D95F39FC-843F-457A-AEBD-F845DC13B226";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -786,13 +798,16 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jehangir Ghandhi (YBPJJEXZ2Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jehangir Ghandhi (YBPJJEXZ2Q)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CartesDeck/CartesDeck-Prefix.pch";
 				INFOPLIST_FILE = "CartesDeck/CartesDeck-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "D95F39FC-843F-457A-AEBD-F845DC13B226";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D95F39FC-843F-457A-AEBD-F845DC13B226";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -803,12 +818,15 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jehangir Ghandhi (YBPJJEXZ2Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jehangir Ghandhi (YBPJJEXZ2Q)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CartesDeck/CartesDeck-Prefix.pch";
 				INFOPLIST_FILE = "CartesDeck/CartesDeck-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "D95F39FC-843F-457A-AEBD-F845DC13B226";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D95F39FC-843F-457A-AEBD-F845DC13B226";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -898,6 +916,7 @@
 				E2CFF901133BC10A001AF92E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2CFF905133BC10A001AF92E /* Build configuration list for PBXNativeTarget "CartesDeckTests" */ = {
 			isa = XCConfigurationList;
@@ -906,6 +925,7 @@
 				E2CFF903133BC10A001AF92E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

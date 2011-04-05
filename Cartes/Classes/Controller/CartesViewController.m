@@ -8,6 +8,7 @@
 
 #import "CartesViewController.h"
 #import "THCardView.h"
+#import "THCard.h"
 @implementation CartesViewController
 
 - (void)dealloc
@@ -30,7 +31,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	THCardView *cardView = [[THCardView alloc]initWithFrame:CGRectMake(50, 50, 100, 140)];
+	UIImageView *iView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"CardTableBackground.png"]];
+	[self.view addSubview:iView];
+	[iView autorelease];
+	
+	THCardView *cardView = [[THCardView alloc]initWithFrame:CGRectMake(50, 50, 120, 168)];
+	cardView.card = [[THCard alloc] initWithSuit:THCardSuitHearts rank:1];
+	[cardView update];
 	[self.view addSubview:cardView];
 }
 

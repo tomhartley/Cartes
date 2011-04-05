@@ -11,12 +11,27 @@
 
 @interface THCardView : UIView {
     THCard *card;
-	UILabel *topLeftLabel;
-	UILabel *bottomRightLabel;
+
+	CGPoint velocity;
+	
+	UIView *frontView;
+	UIView *backView;
+	
+	UILabel *topLeftNumber;
+	UILabel *topLeftSuit;
+
+	UILabel *bottomRightNumber;
+	UILabel *bottomRightSuit;
+	
+	UILabel *centerSuit;
 }
 
 @property (nonatomic, retain) THCard *card;
 
 -(void)update;
 
+
+//UIGestureRecognizer handlers
+- (void)handleDoubleTap:(UITapGestureRecognizer *)sender;
+- (void)handlePan:(UIPanGestureRecognizer *)sender;
 @end

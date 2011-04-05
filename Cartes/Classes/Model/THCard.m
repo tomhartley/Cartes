@@ -12,6 +12,98 @@
 @implementation THCard
 @synthesize suit,rank,faceUp;
 
+-(NSString *)shortRank {
+	if (rank <11 && rank > 1) {
+		return [NSString stringWithFormat:@"%d",rank];
+	} else {
+		switch (rank) {
+			case 1:
+				return @"A";
+				break;
+			case 11:
+				return @"J";
+				break;
+			case 12:
+				return @"Q";
+				break;
+			case 13:
+				return @"K";
+				break;
+			default:
+				return @"?";
+				break;
+		}
+	}
+}
+
+-(NSString *)longRank {
+	if (rank <11 && rank > 1) {
+		return [NSString stringWithFormat:@"%d",rank];
+	} else {
+		switch (rank) {
+			case 1:
+				return @"Ace";
+				break;
+			case 11:
+				return @"Jack";
+				break;
+			case 12:
+				return @"Queen";
+				break;
+			case 13:
+				return @"King";
+				break;
+			default:
+				return @"?";
+				break;
+		}
+	}
+}
+
+-(NSString *)shortSuit {
+	switch (self.suit) {
+		case THCardSuitClubs:
+			return @"♣";
+			break;
+		case THCardSuitDiamonds:
+			return @"♦";
+			break;
+		case THCardSuitHearts:
+			return @"♥";
+			break;
+		case THCardSuitSpades:
+			return @"♠";
+			break;
+		default:
+			return @"?";
+			break;
+	}
+}
+
+-(NSString *)longSuit {
+	switch (self.suit) {
+		case THCardSuitClubs:
+			return @"Clubs";
+			break;
+		case THCardSuitDiamonds:
+			return @"Diamonds";
+			break;
+		case THCardSuitHearts:
+			return @"Hearts";
+			break;
+		case THCardSuitSpades:
+			return @"Spades";
+			break;
+		default:
+			return @"?";
+			break;
+	}
+}
+
+-(NSString *)description {
+	return [NSString stringWithFormat:@"%@ of %@",[self shortRank],[self shortSuit]];
+}
+
 - (id)initWithSuit:(THCardSuit)theSuit rank:(int)theRank {
 	if ((self = [super init])) {
 		suit = theSuit;
