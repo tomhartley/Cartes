@@ -113,6 +113,10 @@
 	return self;
 }
 
+-(void)flip {
+    faceUp = !faceUp;
+}
+
 - (id)initWithCoder:(NSCoder *)decoder {
 	if ((self = [super init])) {
 		suit = (THCardSuit)[decoder decodeIntForKey:@"suit"];

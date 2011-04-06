@@ -21,8 +21,11 @@ typedef enum {
 	BOOL faceUp;
 }
 
-//NSCoder methods
 - (id)initWithSuit:(THCardSuit)theSuit rank:(int)theRank;
+
+-(void)flip;
+
+//NSCoder methods
 - (id)initWithCoder:(NSCoder *)decoder;
 - (void)encodeWithCoder:(NSCoder *)encoder;
 

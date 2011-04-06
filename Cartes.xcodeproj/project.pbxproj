@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D84DADFC134B605C0014C8AF /* NSMutableArray+Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = D84DADFB134B605C0014C8AF /* NSMutableArray+Shuffling.m */; };
+		D84DADFD134B822A0014C8AF /* NSMutableArray+Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = D84DADFB134B605C0014C8AF /* NSMutableArray+Shuffling.m */; };
+		D84DAE03134B8CC70014C8AF /* THCardStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = D84DAE02134B8CC60014C8AF /* THCardStackView.m */; };
 		E2CCAD3E134A7C7900304B7D /* CardTableBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = E2CCAD3D134A7C7900304B7D /* CardTableBackground.png */; };
 		E2CCAD41134A90F700304B7D /* CardBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = E2CCAD40134A90F700304B7D /* CardBackground.png */; };
 		E2CFF87A133BBE41001AF92E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CFF879133BBE41001AF92E /* UIKit.framework */; };
@@ -64,6 +67,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D84DADFA134B605C0014C8AF /* NSMutableArray+Shuffling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Shuffling.h"; sourceTree = "<group>"; };
+		D84DADFB134B605C0014C8AF /* NSMutableArray+Shuffling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Shuffling.m"; sourceTree = "<group>"; };
+		D84DAE01134B8CC60014C8AF /* THCardStackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THCardStackView.h; path = Classes/View/THCardStackView.h; sourceTree = "<group>"; };
+		D84DAE02134B8CC60014C8AF /* THCardStackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THCardStackView.m; path = Classes/View/THCardStackView.m; sourceTree = "<group>"; };
 		E2CCAD3D134A7C7900304B7D /* CardTableBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CardTableBackground.png; path = Images/CardTableBackground.png; sourceTree = "<group>"; };
 		E2CCAD40134A90F700304B7D /* CardBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CardBackground.png; path = Images/CardBackground.png; sourceTree = "<group>"; };
 		E2CFF875133BBE41001AF92E /* Cartes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cartes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +162,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D84DADF9134B5FAF0014C8AF /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				D84DADFA134B605C0014C8AF /* NSMutableArray+Shuffling.h */,
+				D84DADFB134B605C0014C8AF /* NSMutableArray+Shuffling.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		E2CFF86A133BBE41001AF92E = {
 			isa = PBXGroup;
 			children = (
@@ -275,6 +291,7 @@
 		E2CFF907133BC536001AF92E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D84DADF9134B5FAF0014C8AF /* Categories */,
 				E2CFF908133BC538001AF92E /* Model */,
 				E2CFF90A133BC53D001AF92E /* View */,
 				E2CFF909133BC53C001AF92E /* Controller */,
@@ -307,6 +324,8 @@
 			children = (
 				E2CFF918133BE51A001AF92E /* THCardView.h */,
 				E2CFF919133BE51A001AF92E /* THCardView.m */,
+				D84DAE01134B8CC60014C8AF /* THCardStackView.h */,
+				D84DAE02134B8CC60014C8AF /* THCardStackView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -563,6 +582,8 @@
 				E2CFF890133BBE41001AF92E /* CartesViewController.m in Sources */,
 				E2CFF915133BC615001AF92E /* THCard.m in Sources */,
 				E2CFF91A133BE51A001AF92E /* THCardView.m in Sources */,
+				D84DADFC134B605C0014C8AF /* NSMutableArray+Shuffling.m in Sources */,
+				D84DAE03134B8CC70014C8AF /* THCardStackView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,6 +600,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D84DADFD134B822A0014C8AF /* NSMutableArray+Shuffling.m in Sources */,
 				E2CFF8DD133BC10A001AF92E /* main.m in Sources */,
 				E2CFF8E0133BC10A001AF92E /* CartesDeckAppDelegate.m in Sources */,
 				E2CFF8E6133BC10A001AF92E /* CartesDeckViewController.m in Sources */,
@@ -722,6 +744,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cartes/Cartes-Prefix.pch";
 				INFOPLIST_FILE = "Cartes/Cartes-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "D95F39FC-843F-457A-AEBD-F845DC13B226";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D95F39FC-843F-457A-AEBD-F845DC13B226";
@@ -739,6 +762,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cartes/Cartes-Prefix.pch";
 				INFOPLIST_FILE = "Cartes/Cartes-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "D95F39FC-843F-457A-AEBD-F845DC13B226";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D95F39FC-843F-457A-AEBD-F845DC13B226";
@@ -760,6 +784,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CartesTests/CartesTests-Prefix.pch";
 				INFOPLIST_FILE = "CartesTests/CartesTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SenTestingKit,
@@ -783,6 +808,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CartesTests/CartesTests-Prefix.pch";
 				INFOPLIST_FILE = "CartesTests/CartesTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SenTestingKit,
@@ -805,6 +831,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CartesDeck/CartesDeck-Prefix.pch";
 				INFOPLIST_FILE = "CartesDeck/CartesDeck-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "D95F39FC-843F-457A-AEBD-F845DC13B226";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D95F39FC-843F-457A-AEBD-F845DC13B226";
@@ -824,6 +851,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CartesDeck/CartesDeck-Prefix.pch";
 				INFOPLIST_FILE = "CartesDeck/CartesDeck-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "D95F39FC-843F-457A-AEBD-F845DC13B226";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D95F39FC-843F-457A-AEBD-F845DC13B226";
@@ -846,6 +874,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CartesDeckTests/CartesDeckTests-Prefix.pch";
 				INFOPLIST_FILE = "CartesDeckTests/CartesDeckTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SenTestingKit,
@@ -869,6 +898,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CartesDeckTests/CartesDeckTests-Prefix.pch";
 				INFOPLIST_FILE = "CartesDeckTests/CartesDeckTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SenTestingKit,

@@ -35,10 +35,32 @@
 	[self.view addSubview:iView];
 	[iView autorelease];
 	
-	THCardView *cardView = [[THCardView alloc]initWithFrame:CGRectMake(50, 50, 120, 168)];
-	cardView.card = [[THCard alloc] initWithSuit:THCardSuitHearts rank:1];
-	[cardView update];
-	[self.view addSubview:cardView];
+    for (int i = 0;i < 13; i++) {
+        THCardView *cardView = [[THCardView alloc]initWithFrame:CGRectMake(i*60, 0, 0, 0)];
+        cardView.card = [[THCard alloc] initWithSuit:THCardSuitHearts rank:i+1];
+        [cardView update];
+        [self.view addSubview:cardView];
+    }
+
+    for (int i = 0;i < 13; i++) {
+        THCardView *cardView = [[THCardView alloc]initWithFrame:CGRectMake(i*60, 150, 0, 0)];
+        cardView.card = [[THCard alloc] initWithSuit:THCardSuitClubs rank:i+1];
+        [cardView update];
+        [self.view addSubview:cardView];
+    }
+    for (int i = 0;i < 13; i++) {
+        THCardView *cardView = [[THCardView alloc]initWithFrame:CGRectMake(i*60, 300, 0, 0)];
+        cardView.card = [[THCard alloc] initWithSuit:THCardSuitDiamonds rank:i+1];
+        [cardView update];
+        [self.view addSubview:cardView];
+    }
+    for (int i = 0;i < 13; i++) {
+        THCardView *cardView = [[THCardView alloc]initWithFrame:CGRectMake(i*60, 450, 0, 0)];
+        cardView.card = [[THCard alloc] initWithSuit:THCardSuitSpades rank:i+1];
+        [cardView update];
+        [self.view addSubview:cardView];
+    }
+
 }
 
 

@@ -12,9 +12,9 @@
 @implementation THCardView
 @synthesize card;
 
-- (id)initWithFrame:(CGRect)frame
+- (id)initAtOrigin:(CGPoint)origin withCard:(THCard *)theCard;
 {
-	frame = CGRectMake(frame.origin.x, frame.origin.y, 120, 168);
+	CGRect frame = CGRectMake(origin.x, origin.y, 120, 168);
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
@@ -23,10 +23,14 @@
 		self.backgroundColor = [UIColor clearColor];
 		self.layer.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1].CGColor;
 
-		self.layer.shadowRadius = 2;
+		/*self.layer.shadowRadius = 2;
 		self.layer.shadowOffset = CGSizeMake(3, 3);
 		self.layer.shadowOpacity = 0.4;
-
+        */
+        
+        self.layer.borderColor = [UIColor lightGrayColor].CGColor;
+        self.layer.borderWidth = 1.0;
+        
 		self.layer.contents = (id)[UIImage imageNamed:@"CardBackground.png"].CGImage;
 		
 		frontView = [[UIView alloc] initWithFrame:CGRectMake(10, 10, frame.size.width-20, self.frame.size.height-20)];
@@ -81,6 +85,9 @@
 		//self.clipsToBounds = YES;
 		
 		[self addSubview:frontView];
+        
+        card = theCard;
+        [self update];
 	}
     return self;
 }
