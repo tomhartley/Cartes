@@ -34,30 +34,22 @@
 	UIImageView *iView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"CardTableBackground.png"]];
 	[self.view addSubview:iView];
 	[iView autorelease];
-	
+    
     for (int i = 0;i < 13; i++) {
-        THCardView *cardView = [[THCardView alloc]initWithFrame:CGRectMake(i*60, 0, 0, 0)];
-        cardView.card = [[THCard alloc] initWithSuit:THCardSuitHearts rank:i+1];
-        [cardView update];
+        THCardView *cardView = [[THCardView alloc] initAtOrigin:CGPointMake(i*60, 0) withCard:[[THCard alloc] initWithSuit:THCardSuitSpades rank:i+1]];
         [self.view addSubview:cardView];
     }
 
     for (int i = 0;i < 13; i++) {
-        THCardView *cardView = [[THCardView alloc]initWithFrame:CGRectMake(i*60, 150, 0, 0)];
-        cardView.card = [[THCard alloc] initWithSuit:THCardSuitClubs rank:i+1];
-        [cardView update];
+        THCardView *cardView = [[THCardView alloc] initAtOrigin:CGPointMake(i*60, 150) withCard:[[THCard alloc] initWithSuit:THCardSuitHearts rank:i+1]];
         [self.view addSubview:cardView];
     }
     for (int i = 0;i < 13; i++) {
-        THCardView *cardView = [[THCardView alloc]initWithFrame:CGRectMake(i*60, 300, 0, 0)];
-        cardView.card = [[THCard alloc] initWithSuit:THCardSuitDiamonds rank:i+1];
-        [cardView update];
+        THCardView *cardView = [[THCardView alloc] initAtOrigin:CGPointMake(i*60, 300) withCard:[[THCard alloc] initWithSuit:THCardSuitDiamonds rank:i+1]];
         [self.view addSubview:cardView];
     }
     for (int i = 0;i < 13; i++) {
-        THCardView *cardView = [[THCardView alloc]initWithFrame:CGRectMake(i*60, 450, 0, 0)];
-        cardView.card = [[THCard alloc] initWithSuit:THCardSuitSpades rank:i+1];
-        [cardView update];
+        THCardView *cardView = [[THCardView alloc] initAtOrigin:CGPointMake(i*60, 450) withCard:[[THCard alloc] initWithSuit:THCardSuitClubs rank:i+1]];
         [self.view addSubview:cardView];
     }
 
@@ -74,7 +66,10 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-    return YES;
+    if (UIInterfaceOrientationIsLandscape(interfaceOrientation)) {
+        return YES;
+    }
+    return NO;
 }
 
 @end

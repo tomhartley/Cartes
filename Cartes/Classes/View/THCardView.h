@@ -30,6 +30,7 @@
 
 -(void)update;
 
+- (id)initAtOrigin:(CGPoint)origin withCard:(THCard *)theCard;
 
 //UIGestureRecognizer handlers
 - (void)handleDoubleTap:(UITapGestureRecognizer *)sender;

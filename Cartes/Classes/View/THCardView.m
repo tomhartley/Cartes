@@ -12,7 +12,7 @@
 @implementation THCardView
 @synthesize card;
 
-- (id)initAtOrigin:(CGPoint)origin withCard:(THCard *)theCard;
+- (id)initAtOrigin:(CGPoint)origin withCard:(THCard *)theCard
 {
 	CGRect frame = CGRectMake(origin.x, origin.y, 120, 168);
     self = [super initWithFrame:frame];
@@ -56,7 +56,7 @@
 		topLeftSuit.adjustsFontSizeToFitWidth = YES;
 		topLeftSuit.backgroundColor = [UIColor clearColor];
 		[frontView addSubview:topLeftSuit];
-		
+        
 		bottomRightNumber = [[UILabel alloc] initWithFrame:CGRectMake(frontView.frame.size.width-20, frontView.frame.size.height-30, 20, 30)];
 		bottomRightNumber.textAlignment = UITextAlignmentCenter;
 		bottomRightNumber.font = [UIFont fontWithName:@"CourierNewPSMT" size:30];
