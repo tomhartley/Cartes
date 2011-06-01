@@ -9,20 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "THCard.h"
 #import <GameKit/GameKit.h>
-
-typedef enum {
-    THMessageTypeCard,
-    //THMessageTypeClearData,
-    //THMessageType,
-} THMessageType;
-
-
-typedef enum {
-    THPlayerLocationNorth,
-    THPlayerLocationEast,
-    THPlayerLocationSouth,
-    THPlayerLocationWest,
-} THPlayerLocation;
+#import "Cartes.h"
 
 @interface THPlayer : NSObject {
     NSArray *currentDeck;
@@ -33,10 +20,10 @@ typedef enum {
 
 @property (nonatomic,readonly) NSArray *currentDeck;
 @property (nonatomic,readonly) NSString *peerID;
-@property (nonatomic,readonly) THPlayerLocation *location;
+@property (nonatomic,readonly) THPlayerLocation location;
 
 
--(id)initWithSession:(GKSession *)currentSession peerID:(NSString *)peerClientID location:(THPlayerLocation)side
+-(id)initWithSession:(GKSession *)currentSession peerID:(NSString *)peerClientID location:(THPlayerLocation)side;
 -(void)sendCard:(THCard *)card;
 -(void)resync;
 

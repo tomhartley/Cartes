@@ -13,10 +13,20 @@
 
 @interface THCardGame : NSObject <GKSessionDelegate>{
     GKSession *gameSession;
-    NSDictionary *players; //Maps from a peerID to a THPlayer
+    NSMutableDictionary *players; //Maps from a peerID to a THPlayer
     int maxPlayers;
+    id delegate; //Will document later... sure, keep believing
 }
 
--(void)initWithMaxPlayers:(NSInteger)max;
+@property (nonatomic, assign) id delegate;
+
+-(id)initWithMaxPlayers:(NSInteger)max;
 - (THPlayerLocation) getSuitableLocation;
+-(THPlayer *)getPlayerWithLocation:(THPlayerLocation)loc;
+
+
+
+THPlayerLocation oppositeSide (THPlayerLocation location);
+THPlayerLocation adjacentSide (THPlayerLocation location);
+- (void) receiveData:(NSData *)data fromPeer:(NSString *)peer inSession: (GKSession *)session context:(void *)context;
 @end

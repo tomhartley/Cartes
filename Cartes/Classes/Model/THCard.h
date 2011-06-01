@@ -7,9 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "THRandom.h"
 
 typedef enum {
-	THCardSuitClubs,
+	THCardSuitClubs = 0,
 	THCardSuitDiamonds,
 	THCardSuitHearts,
 	THCardSuitSpades
@@ -20,7 +21,7 @@ typedef enum {
 	int rank; //1 for ace, going to 13 for king
 	BOOL faceUp;
 }
-
+-(id)initWithRandomValue;
 - (id)initWithSuit:(THCardSuit)theSuit rank:(int)theRank;
 
 -(void)flip;

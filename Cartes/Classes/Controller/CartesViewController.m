@@ -9,6 +9,7 @@
 #import "CartesViewController.h"
 #import "THCardView.h"
 #import "THCard.h"
+#import "THGameBoardController.h"
 @implementation CartesViewController
 
 - (void)dealloc
@@ -27,15 +28,14 @@
 #pragma mark - View lifecycle
 
 
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	UIImageView *iView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"CardTableBackground.png"]];
+	/*UIImageView *iView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"CardTableBackground.png"]];
 	[self.view addSubview:iView];
-	[iView autorelease];
+	[iView autorelease];*/
     
-    for (int i = 0;i < 13; i++) {
+    /*for (int i = 0;i < 13; i++) {
         THCardView *cardView = [[THCardView alloc] initAtOrigin:CGPointMake(i*60, 0) withCard:[[THCard alloc] initWithSuit:THCardSuitSpades rank:i+1]];
         [self.view addSubview:cardView];
     }
@@ -52,9 +52,13 @@
         THCardView *cardView = [[THCardView alloc] initAtOrigin:CGPointMake(i*60, 450) withCard:[[THCard alloc] initWithSuit:THCardSuitClubs rank:i+1]];
         [self.view addSubview:cardView];
     }
-
+    */
 }
 
+-(void)viewDidAppear:(BOOL)animated {
+    THGameBoardController *controller = [[THGameBoardController alloc] initWithNibName:@"THGameBoardController" bundle:nil];
+    [self presentModalViewController:controller animated:NO];
+}
 
 - (void)viewDidUnload
 {

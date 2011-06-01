@@ -26,7 +26,7 @@
 	UILabel *centerSuit;
 }
 
-@property (nonatomic, retain) THCard *card;
+@property (nonatomic, retain, readonly) THCard *card;
 
 -(void)update;
 
@@ -34,5 +34,6 @@
 
 //UIGestureRecognizer handlers
 - (void)handleDoubleTap:(UITapGestureRecognizer *)sender;
+- (void)handleTripleTap:(UITapGestureRecognizer *)sender;
 - (void)handlePan:(UIPanGestureRecognizer *)sender;
 @end

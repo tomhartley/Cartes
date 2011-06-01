@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "THServerConnection.h"
 
 @interface CartesDeckViewController : UIViewController {
-    
+    THServerConnection *connection;
 }
+
+-(IBAction)sendRandomCard;
 
 @end

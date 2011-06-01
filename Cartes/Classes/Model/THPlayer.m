@@ -10,6 +10,7 @@
 
 
 @implementation THPlayer
+@synthesize peerID,location;
 
 -(id)initWithSession:(GKSession *)currentSession peerID:(NSString *)peerClientID location:(THPlayerLocation)side {
     if ((self = [super init])) {

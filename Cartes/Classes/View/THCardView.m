@@ -79,6 +79,12 @@
 		[self addGestureRecognizer:tapRecognizer];
 		[tapRecognizer autorelease];
 
+        UITapGestureRecognizer *tripleTapRecogniser = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTripleTap:)];
+		tripleTapRecogniser.numberOfTapsRequired = 3;
+		[self addGestureRecognizer:tripleTapRecogniser];
+		[tripleTapRecogniser autorelease];
+
+        
 		UIPanGestureRecognizer *panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
 		[self addGestureRecognizer:panRecognizer];
 		[panRecognizer autorelease];
@@ -86,22 +92,35 @@
 		
 		[self addSubview:frontView];
         
-        card = theCard;
+        card = [theCard retain];
+        
+        [self.card addObserver:self forKeyPath:@"faceUp" options:0 context:nil];
+        
         [self update];
 	}
     return self;
 }
 
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    //The card's faceUp property changed
+    [self update];
+}
+
+
 - (void)handleDoubleTap:(UITapGestureRecognizer *)sender {
 	if (sender.state == UIGestureRecognizerStateEnded) {   
 		// handling code
-		card.faceUp = !card.faceUp;
 		[UIView beginAnimations:@"FlipCard" context:nil];
-		[self update];
+        card.faceUp = !card.faceUp;
 		[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self cache:YES];
 		[UIView setAnimationDuration:0.6];
 		[UIView commitAnimations];
 	} 
+}
+
+- (void)handleTripleTap:(UITapGestureRecognizer *)sender {
+    [self removeFromSuperview];
 }
 
 - (void)handlePan:(UIPanGestureRecognizer *)sender {
@@ -186,6 +205,22 @@
 
 - (void)dealloc
 {
+    [frontView removeFromSuperview];
+    [frontView release];
+    [backView removeFromSuperview];
+    [backView release];
+    [topLeftNumber removeFromSuperview];
+    [topLeftNumber release];
+    [topLeftSuit removeFromSuperview];
+    [topLeftSuit release];
+    [bottomRightNumber removeFromSuperview];
+    [bottomRightNumber release];
+    [bottomRightSuit removeFromSuperview];
+    [bottomRightSuit release];
+    [centerSuit removeFromSuperview];
+    [centerSuit release];
+    [card removeObserver:self forKeyPath:@"faceUp"];
+    [card release];
     [super dealloc];
 }
 

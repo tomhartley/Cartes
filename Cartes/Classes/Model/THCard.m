@@ -101,7 +101,15 @@
 }
 
 -(NSString *)description {
-	return [NSString stringWithFormat:@"%@ of %@",[self shortRank],[self shortSuit]];
+	return [NSString stringWithFormat:@"%@ of %@",[self longRank],[self longSuit]];
+}
+-(id)initWithRandomValue {
+    if ((self = [super init])) {
+		suit = [THRandom randomNumberWithMin:0 withMax:3];
+		rank = (THCardSuit)[THRandom randomNumberWithMin:1 withMax:13];
+		faceUp = YES;
+	}
+	return self;
 }
 
 - (id)initWithSuit:(THCardSuit)theSuit rank:(int)theRank {
