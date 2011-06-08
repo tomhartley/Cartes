@@ -14,7 +14,14 @@
 @interface THServerConnection : NSObject <GKSessionDelegate> {
     GKSession *gameSession;
     BOOL connected;
+    NSMutableArray *cards;
 }
 
+@property (nonatomic,retain,readonly) NSMutableArray *cards;
+
 -(void)sendCard:(THCard *)card;
+-(void)sendCardAtIndex:(int)index;
+
+- (void) terminateSession:(NSNotification *)notification;
+
 @end

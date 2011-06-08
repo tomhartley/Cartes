@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D821ED2A139104D50049A49D /* THPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D821ED29139104D50049A49D /* THPlayer.m */; };
 		D821ED2C139106BA0049A49D /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D821ED2B139106BA0049A49D /* GameKit.framework */; };
 		D84DADFC134B605C0014C8AF /* NSMutableArray+Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = D84DADFB134B605C0014C8AF /* NSMutableArray+Shuffling.m */; };
 		D84DADFD134B822A0014C8AF /* NSMutableArray+Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = D84DADFB134B605C0014C8AF /* NSMutableArray+Shuffling.m */; };
@@ -18,6 +17,14 @@
 		D88760CC139539A000DC3562 /* THRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = D88760CB139539A000DC3562 /* THRandom.m */; };
 		D88760D31395556800DC3562 /* THRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = D88760CB139539A000DC3562 /* THRandom.m */; };
 		D8B880D01364D59D0029A861 /* THCardGame.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B880CF1364D59D0029A861 /* THCardGame.m */; };
+		D8C165E51396A83F0065BC78 /* THCardsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D88760DE1396350300DC3562 /* THCardsViewController.xib */; };
+		D8C165E61396A8570065BC78 /* THCardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88760DD1396350200DC3562 /* THCardsViewController.m */; };
+		D8D2A8021399AE94003E3A5B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D2A8011399AE94003E3A5B /* QuartzCore.framework */; };
+		D8D2A8071399AFE9003E3A5B /* TKAlertCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D2A8041399AFE9003E3A5B /* TKAlertCenter.m */; };
+		D8D2A8081399AFE9003E3A5B /* TKAlertCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D2A8041399AFE9003E3A5B /* TKAlertCenter.m */; };
+		D8D2A8091399AFE9003E3A5B /* UIView+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D2A8061399AFE9003E3A5B /* UIView+TKCategory.m */; };
+		D8D2A80A1399AFE9003E3A5B /* UIView+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D2A8061399AFE9003E3A5B /* UIView+TKCategory.m */; };
+		D8D2A80C1399B1A4003E3A5B /* THPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D2A80B1399B1A4003E3A5B /* THPlayer.m */; };
 		E2CCAD3E134A7C7900304B7D /* CardTableBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = E2CCAD3D134A7C7900304B7D /* CardTableBackground.png */; };
 		E2CCAD41134A90F700304B7D /* CardBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = E2CCAD40134A90F700304B7D /* CardBackground.png */; };
 		E2CFF87A133BBE41001AF92E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CFF879133BBE41001AF92E /* UIKit.framework */; };
@@ -76,7 +83,6 @@
 
 /* Begin PBXFileReference section */
 		D821ED28139104D50049A49D /* THPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THPlayer.h; path = Classes/Model/THPlayer.h; sourceTree = "<group>"; };
-		D821ED29139104D50049A49D /* THPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THPlayer.m; path = Classes/Model/THPlayer.m; sourceTree = "<group>"; };
 		D821ED2B139106BA0049A49D /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		D821ED2D1394EF980049A49D /* Cartes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cartes.h; sourceTree = "<group>"; };
 		D84DADFA134B605C0014C8AF /* NSMutableArray+Shuffling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+Shuffling.h"; path = "Classes/Utilities/NSMutableArray+Shuffling.h"; sourceTree = "<group>"; };
@@ -89,8 +95,17 @@
 		D88760C81395101400DC3562 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		D88760CA139539A000DC3562 /* THRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THRandom.h; path = Classes/Utilities/THRandom.h; sourceTree = "<group>"; };
 		D88760CB139539A000DC3562 /* THRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THRandom.m; path = Classes/Utilities/THRandom.m; sourceTree = "<group>"; };
+		D88760DC1396350200DC3562 /* THCardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THCardsViewController.h; path = CartesDeck/Classes/Controller/THCardsViewController.h; sourceTree = SOURCE_ROOT; };
+		D88760DD1396350200DC3562 /* THCardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THCardsViewController.m; path = CartesDeck/Classes/Controller/THCardsViewController.m; sourceTree = SOURCE_ROOT; };
+		D88760DE1396350300DC3562 /* THCardsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = THCardsViewController.xib; path = CartesDeck/Classes/Controller/THCardsViewController.xib; sourceTree = SOURCE_ROOT; };
 		D8B880CE1364D59D0029A861 /* THCardGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THCardGame.h; path = Classes/Model/THCardGame.h; sourceTree = "<group>"; };
 		D8B880CF1364D59D0029A861 /* THCardGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THCardGame.m; path = Classes/Model/THCardGame.m; sourceTree = "<group>"; };
+		D8D2A8011399AE94003E3A5B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D8D2A8031399AFE9003E3A5B /* TKAlertCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKAlertCenter.h; path = Classes/Utilities/TKAlertCenter.h; sourceTree = "<group>"; };
+		D8D2A8041399AFE9003E3A5B /* TKAlertCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKAlertCenter.m; path = Classes/Utilities/TKAlertCenter.m; sourceTree = "<group>"; };
+		D8D2A8051399AFE9003E3A5B /* UIView+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+TKCategory.h"; path = "Classes/Utilities/UIView+TKCategory.h"; sourceTree = "<group>"; };
+		D8D2A8061399AFE9003E3A5B /* UIView+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+TKCategory.m"; path = "Classes/Utilities/UIView+TKCategory.m"; sourceTree = "<group>"; };
+		D8D2A80B1399B1A4003E3A5B /* THPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THPlayer.m; path = Classes/Model/THPlayer.m; sourceTree = "<group>"; };
 		E2CCAD3D134A7C7900304B7D /* CardTableBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CardTableBackground.png; path = Images/CardTableBackground.png; sourceTree = "<group>"; };
 		E2CCAD40134A90F700304B7D /* CardBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CardBackground.png; path = Images/CardBackground.png; sourceTree = "<group>"; };
 		E2CFF875133BBE41001AF92E /* Cartes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cartes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,6 +179,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8D2A8021399AE94003E3A5B /* QuartzCore.framework in Frameworks */,
 				D88760C91395101400DC3562 /* GameKit.framework in Frameworks */,
 				E2CFF8D2133BC10A001AF92E /* UIKit.framework in Frameworks */,
 				E2CFF8D3133BC10A001AF92E /* Foundation.framework in Frameworks */,
@@ -191,6 +207,10 @@
 				D88760CB139539A000DC3562 /* THRandom.m */,
 				D84DADFA134B605C0014C8AF /* NSMutableArray+Shuffling.h */,
 				D84DADFB134B605C0014C8AF /* NSMutableArray+Shuffling.m */,
+				D8D2A8031399AFE9003E3A5B /* TKAlertCenter.h */,
+				D8D2A8041399AFE9003E3A5B /* TKAlertCenter.m */,
+				D8D2A8051399AFE9003E3A5B /* UIView+TKCategory.h */,
+				D8D2A8061399AFE9003E3A5B /* UIView+TKCategory.m */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -221,6 +241,7 @@
 		E2CFF878133BBE41001AF92E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D8D2A8011399AE94003E3A5B /* QuartzCore.framework */,
 				D88760C81395101400DC3562 /* GameKit.framework */,
 				D821ED2B139106BA0049A49D /* GameKit.framework */,
 				E2CFF91B133BEE9D001AF92E /* QuartzCore.framework */,
@@ -333,8 +354,8 @@
 				E2CFF889133BBE41001AF92E /* CartesAppDelegate.m */,
 				D8B880CE1364D59D0029A861 /* THCardGame.h */,
 				D8B880CF1364D59D0029A861 /* THCardGame.m */,
+				D8D2A80B1399B1A4003E3A5B /* THPlayer.m */,
 				D821ED28139104D50049A49D /* THPlayer.h */,
-				D821ED29139104D50049A49D /* THPlayer.m */,
 				E2CFF913133BC615001AF92E /* THCard.h */,
 				E2CFF914133BC615001AF92E /* THCard.m */,
 			);
@@ -374,6 +395,7 @@
 		E2CFF90C133BC596001AF92E /* Nibs */ = {
 			isa = PBXGroup;
 			children = (
+				D88760DE1396350300DC3562 /* THCardsViewController.xib */,
 				E2CFF8E1133BC10A001AF92E /* MainWindow.xib */,
 				E2CFF8E7133BC10A001AF92E /* CartesDeckViewController.xib */,
 			);
@@ -395,6 +417,8 @@
 			children = (
 				E2CFF8E4133BC10A001AF92E /* CartesDeckViewController.h */,
 				E2CFF8E5133BC10A001AF92E /* CartesDeckViewController.m */,
+				D88760DC1396350200DC3562 /* THCardsViewController.h */,
+				D88760DD1396350200DC3562 /* THCardsViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -564,6 +588,7 @@
 				E2CFF8DA133BC10A001AF92E /* InfoPlist.strings in Resources */,
 				E2CFF8E3133BC10A001AF92E /* MainWindow.xib in Resources */,
 				E2CFF8E9133BC10A001AF92E /* CartesDeckViewController.xib in Resources */,
+				D8C165E51396A83F0065BC78 /* THCardsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,9 +644,11 @@
 				E2CFF91A133BE51A001AF92E /* THCardView.m in Sources */,
 				D84DADFC134B605C0014C8AF /* NSMutableArray+Shuffling.m in Sources */,
 				D8B880D01364D59D0029A861 /* THCardGame.m in Sources */,
-				D821ED2A139104D50049A49D /* THPlayer.m in Sources */,
 				D88760C313950EFE00DC3562 /* THGameBoardController.m in Sources */,
 				D88760CC139539A000DC3562 /* THRandom.m in Sources */,
+				D8D2A8071399AFE9003E3A5B /* TKAlertCenter.m in Sources */,
+				D8D2A8091399AFE9003E3A5B /* UIView+TKCategory.m in Sources */,
+				D8D2A80C1399B1A4003E3A5B /* THPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -645,6 +672,9 @@
 				E2CFF8E6133BC10A001AF92E /* CartesDeckViewController.m in Sources */,
 				E2CFF917133BC615001AF92E /* THCard.m in Sources */,
 				D88760C713950FC100DC3562 /* THServerConnection.m in Sources */,
+				D8C165E61396A8570065BC78 /* THCardsViewController.m in Sources */,
+				D8D2A8081399AFE9003E3A5B /* TKAlertCenter.m in Sources */,
+				D8D2A80A1399AFE9003E3A5B /* UIView+TKCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -781,6 +811,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jehangir Ghandhi (YBPJJEXZ2Q)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cartes/Cartes-Prefix.pch";
 				INFOPLIST_FILE = "Cartes/Cartes-Info.plist";
@@ -864,8 +895,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jehangir Ghandhi (YBPJJEXZ2Q)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CartesDeck/CartesDeck-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "CartesDeck/CartesDeck-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -886,6 +919,7 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CartesDeck/CartesDeck-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "CartesDeck/CartesDeck-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";

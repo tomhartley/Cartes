@@ -7,7 +7,7 @@
 //
 
 #import "THCardGame.h"
-
+#import "TKAlertCenter.h"
 
 @implementation THCardGame
 @synthesize delegate;
@@ -19,10 +19,17 @@
         gameSession.available = YES;
         gameSession.delegate = self;
         [gameSession setDataReceiveHandler:self withContext:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sendCardToAPlayer:) name:@"THSendCard" object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(terminateSession:) name:@"UIApplicationWillTerminateNotification" object:nil];
+        players = [[NSMutableDictionary alloc] init];
     }
         return self;
 }
 
+-(void)sendCardToAPlayer:(NSNotification *)notification{
+    //A TEMPORARY HACK FOR TESTING
+    [[[players allValues] objectAtIndex:0] sendCard:[[notification userInfo] objectForKey:@"Card"]];
+}
 
 - (void)session:(GKSession *)session peer:(NSString *)peerID didChangeState:(GKPeerConnectionState)state {
     //Probably should do something if they disconect, y'know?
@@ -33,14 +40,12 @@
             THPlayer *player = [[THPlayer alloc] initWithSession:gameSession peerID:peerID location:[self getSuitableLocation]];
             [player autorelease];
             [players setValue:player forKey:peerID];
-            NSLog(@"Woo, someone CONNECTED!!!!!!!!!!!");
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Winning" message:@"We have one!" delegate:nil cancelButtonTitle:@"Yay!" otherButtonTitles:nil];
-            [alert show];
-            [alert autorelease];
+            [[TKAlertCenter defaultCenter] postAlertWithMessage:[NSString stringWithFormat:@"%@ connected to game", [session displayNameForPeer:peerID]]];
             break;
         }
         case GKPeerStateDisconnected:
             [players removeObjectForKey:peerID];
+             [[TKAlertCenter defaultCenter] postAlertWithMessage:[NSString stringWithFormat:@"%@ disconnected", [session displayNameForPeer:peerID]]];
             break;
         case GKPeerStateUnavailable:
             [players removeObjectForKey:peerID];
@@ -60,12 +65,14 @@
 
 - (void)session:(GKSession *)session connectionWithPeerFailed:(NSString *)peerID withError:(NSError *)error {
     /*THPlayer *failPlayer = [players objectForKey:peerID];*/
+    [[TKAlertCenter defaultCenter] postAlertWithMessage:[NSString stringWithFormat:@"%@ disconnected", [session displayNameForPeer:peerID]]];
     [players removeObjectForKey:peerID];
 }
 
 - (void)session:(GKSession *)session didFailWithError:(NSError *)error {
     //We're screwed, fix this later, innit
     //Fuuuuuu... should probably go into nuclear meltdown or something... at least inform the user I guess.
+    [[TKAlertCenter defaultCenter] postAlertWithMessage:[NSString stringWithFormat:@"Critical error. We're all gonna die some day."]];
     [players removeAllObjects];
     
 }
@@ -178,6 +185,9 @@ THPlayerLocation adjacentSide (THPlayerLocation location) {
     }
 }
 
-
+- (void) terminateSession:(NSNotification *)notification {
+    //EXTERMINATE, EXTERMINATE
+    [gameSession disconnectFromAllPeers];
+}
 
 @end

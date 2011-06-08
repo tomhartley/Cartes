@@ -10,22 +10,29 @@
 
 
 @implementation THPlayer
-@synthesize peerID,location;
+@synthesize peerID,location,displayName;
 
 -(id)initWithSession:(GKSession *)currentSession peerID:(NSString *)peerClientID location:(THPlayerLocation)side {
     if ((self = [super init])) {
-        session = currentSession;
-        peerID = peerClientID;
+        session = [currentSession retain];
+        peerID = [peerClientID retain];
         location = side;
+        displayName = [[session displayNameForPeer:peerID] retain];
     }
     return self;
 }
 
 -(void)sendCard:(THCard *)card {
-    NSData *cardData = [NSKeyedArchiver archivedDataWithRootObject:card];
-    NSMutableData *dataToSend = [NSMutableData dataWithBytes:(int)THMessageTypeCard length:sizeof(THMessageType)];
+    NSMutableData *cardData = [[NSMutableData alloc] init];
+    NSKeyedArchiver *archiver = [[NSKeyedArchiver alloc] initForWritingWithMutableData:cardData];
+    [card encodeWithCoder:archiver];
+    [archiver finishEncoding];
+    [archiver release];
+    int temp = THMessageTypeCard;
+    NSMutableData *dataToSend = [NSMutableData dataWithBytes:&temp length:sizeof(THMessageType)];
     [dataToSend appendData:cardData];
-    [session sendData:dataToSend toPeers:[NSArray arrayWithObject:peerID] withDataMode:GKSendDataReliable error:nil];
+    [cardData release];
+    [session sendDataToAllPeers:dataToSend withDataMode:GKSendDataReliable error:nil];
 }
 
 -(NSArray *)currentDeck {
@@ -34,6 +41,13 @@
 
 -(void)resync {
     //TODO: Not implemented yet...
+}
+
+-(void)dealloc {
+    [displayName release];
+    [session release];
+    [peerID release];
+    [super dealloc];
 }
 
 @end

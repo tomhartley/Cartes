@@ -31,28 +31,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	/*UIImageView *iView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"CardTableBackground.png"]];
-	[self.view addSubview:iView];
-	[iView autorelease];*/
-    
-    /*for (int i = 0;i < 13; i++) {
-        THCardView *cardView = [[THCardView alloc] initAtOrigin:CGPointMake(i*60, 0) withCard:[[THCard alloc] initWithSuit:THCardSuitSpades rank:i+1]];
-        [self.view addSubview:cardView];
-    }
-
-    for (int i = 0;i < 13; i++) {
-        THCardView *cardView = [[THCardView alloc] initAtOrigin:CGPointMake(i*60, 150) withCard:[[THCard alloc] initWithSuit:THCardSuitHearts rank:i+1]];
-        [self.view addSubview:cardView];
-    }
-    for (int i = 0;i < 13; i++) {
-        THCardView *cardView = [[THCardView alloc] initAtOrigin:CGPointMake(i*60, 300) withCard:[[THCard alloc] initWithSuit:THCardSuitDiamonds rank:i+1]];
-        [self.view addSubview:cardView];
-    }
-    for (int i = 0;i < 13; i++) {
-        THCardView *cardView = [[THCardView alloc] initAtOrigin:CGPointMake(i*60, 450) withCard:[[THCard alloc] initWithSuit:THCardSuitClubs rank:i+1]];
-        [self.view addSubview:cardView];
-    }
-    */
 }
 
 -(void)viewDidAppear:(BOOL)animated {

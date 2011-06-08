@@ -10,16 +10,20 @@
 #import "THCard.h"
 #import <GameKit/GameKit.h>
 #import "Cartes.h"
+#import "TKAlertCenter.h"
+
 
 @interface THPlayer : NSObject {
     NSArray *currentDeck;
     NSString *peerID;
+    NSString *displayName;
     GKSession *session;
     THPlayerLocation location;
 }
 
 @property (nonatomic,readonly) NSArray *currentDeck;
 @property (nonatomic,readonly) NSString *peerID;
+@property (nonatomic,readonly) NSString *displayName;
 @property (nonatomic,readonly) THPlayerLocation location;
 
 

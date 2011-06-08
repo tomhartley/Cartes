@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "THCardGame.h"
 #import "THCardView.h"
+
 @interface THGameBoardController : UIViewController {
     THCardGame *game;
     UIImageView *backgroundImage;

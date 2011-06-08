@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "THServerConnection.h"
+#import "THCardsViewController.h"
 
 @interface CartesDeckViewController : UIViewController {
     THServerConnection *connection;
 }
 
--(IBAction)sendRandomCard;
 
 @end

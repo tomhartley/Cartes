@@ -15,24 +15,49 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        game = [[THCardGame alloc] initWithMaxPlayers:2];
+        game = [[THCardGame alloc] initWithMaxPlayers:4];
         game.delegate = self;
     }
     return self;
+    
 }
 
 -(void)addCard:(THCard *)card fromLocation:(THPlayerLocation)location {
     THCardView *newView = [[THCardView alloc] initAtOrigin:CGPointMake(100,100) withCard:card];
-    [self.view addSubview:newView];
+    //1024 by 768
     [newView autorelease];
+    CGPoint centerPoint;
+    switch (location) {
+        case THPlayerLocationNorth:
+            centerPoint = CGPointMake(512, -200);
+            break;
+        case THPlayerLocationSouth:
+            centerPoint = CGPointMake(512, 968);
+            break;
+        case THPlayerLocationEast:
+            centerPoint = CGPointMake(384, -200);
+            break;
+        case THPlayerLocationWest:
+            centerPoint = CGPointMake(384, 1224);
+            break;
+        default:
+            centerPoint = CGPointMake(512, -200);
+            break;
+    }
+    newView.center = centerPoint;
+    [self.view addSubview:newView];
+    CGPoint newCenter = CGPointMake([THRandom randomNumberWithMin:200 withMax:824], [THRandom randomNumberWithMin:200 withMax:568]);
+    [UIView beginAnimations:@"moveCard" context:nil];
+    [UIView setAnimationDuration:0.8];
+    newView.center = newCenter;
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+    [UIView commitAnimations];
 }
 
 -(IBAction)addRandomCard {
     THCard *randomCard = [[THCard alloc] initWithRandomValue];
-    THCardView *newView = [[THCardView alloc] initAtOrigin:CGPointMake([THRandom randomNumberWithMin:0 withMax:1000], [THRandom randomNumberWithMin:0 withMax:500]) withCard:randomCard];
     [randomCard autorelease];
-    [self.view addSubview:newView];
-    [newView autorelease];
+    [self addCard:randomCard fromLocation:THPlayerLocationNorth];
 }
 
 
@@ -73,7 +98,7 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-	return YES;
+	return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft);
 }
 
 @end

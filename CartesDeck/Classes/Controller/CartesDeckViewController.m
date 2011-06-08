@@ -10,12 +10,6 @@
 
 @implementation CartesDeckViewController
 
--(IBAction)sendRandomCard {
-    THCard *card = [[THCard alloc] initWithRandomValue];
-    [connection sendCard:card];
-    [card autorelease];
-}
-
 - (void)dealloc
 {
     [super dealloc];
@@ -30,6 +24,12 @@
 }
 
 #pragma mark - View lifecycle
+
+- (void)viewDidAppear:(BOOL)animated {
+    THCardsViewController *vc = [[THCardsViewController alloc] initWithConnection:connection];
+    [self presentModalViewController:vc animated:YES];
+    [vc autorelease];
+}
 
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.

@@ -120,6 +120,7 @@
 }
 
 - (void)handleTripleTap:(UITapGestureRecognizer *)sender {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"THSendCard" object:nil userInfo:[NSDictionary dictionaryWithObject:self.card forKey:@"Card"]];
     [self removeFromSuperview];
 }
 
